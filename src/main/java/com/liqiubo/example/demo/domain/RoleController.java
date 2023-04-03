@@ -20,5 +20,6 @@ public class RoleController {
         JSONArray jsonArray = JSONArray.fromObject(list);
         System.out.println(jsonArray.toString());
         return jsonArray.toString();
+
     }
 }
