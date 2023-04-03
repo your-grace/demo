@@ -58,6 +58,10 @@
             <version>2.1</version>
             <classifier>jdk15</classifier>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

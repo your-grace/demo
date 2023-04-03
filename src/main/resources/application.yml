@@ -21,3 +21,13 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  # freemarker配置
+  freemarker:
+    suffix: .ftl
+    request-context-attribute: request
+    expose-session-attributes: true
+    content-type: text/html
+    check-template-location: true
+    charset: UTF-8
+    cache: false
+    template-loader-path: classpath:/templates/
