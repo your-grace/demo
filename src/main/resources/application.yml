@@ -30,4 +30,7 @@ spring:
     check-template-location: true
     charset: UTF-8
     cache: false
-    template-loader-path: classpath:/templates/
+    template-loader-path: classpath:/templates
+    prefer-file-system-access: false
+
+

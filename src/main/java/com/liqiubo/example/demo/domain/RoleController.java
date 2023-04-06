@@ -3,8 +3,9 @@ package com.liqiubo.example.demo.domain;
 import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -12,8 +13,8 @@ import java.util.List;
 public class RoleController {
     @Autowired
     private RoleService roleService;
-    @GetMapping(value = "/role", produces = {"application/json;charset=UTF-8"})
-    public String getAllRole(Model model) {
+    @RequestMapping(value = "/role", produces = {"application/json;charset=UTF-8"})
+    public ModelAndView getAllRole(Model model) {
         List<TSRole> list = roleService.getAllRoles();
         for (TSRole role : list) {
             System.out.println(role);
@@ -22,6 +23,7 @@ public class RoleController {
         System.out.println(jsonArray.toString());
 //        return jsonArray.toString();
         model.addAttribute("roles", list);
-        return "index";
+        return new ModelAndView("index").addObject("roles", list);
     }
+
 }
