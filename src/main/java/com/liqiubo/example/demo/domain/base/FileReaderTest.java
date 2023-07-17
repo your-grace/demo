@@ -11,7 +11,8 @@ import java.nio.file.Paths;
 public class FileReaderTest {
     @Test
     public void demo() throws URISyntaxException, IOException {
-        URL location = getClass().getClassLoader().getResource("/static/helloworld.txt");
+//        URL location = getClass().getClassLoader().getResource("/static/helloworld.txt");
+        URL location = getClass().getResource("/static/helloworld.txt");
         System.out.println(location);
         Path path = Paths.get(location.toURI());
         BaseFileReader lowerCaseFileReader = new LowercaseFileReader(path);
