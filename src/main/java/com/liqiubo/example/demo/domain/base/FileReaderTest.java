@@ -1,5 +1,7 @@
 package com.liqiubo.example.demo.domain.base;
 
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.date.Month;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -19,5 +21,7 @@ public class FileReaderTest {
         BaseFileReader uppercaseFileReader = new UppercaseFileReader(path);
         System.out.println(lowerCaseFileReader.readFile());
         System.out.println(uppercaseFileReader.readFile());
+        String zodiac = DateUtil.getZodiac(Month.SEPTEMBER.getValue(), 15);
+        System.out.println(zodiac);
     }
 }
