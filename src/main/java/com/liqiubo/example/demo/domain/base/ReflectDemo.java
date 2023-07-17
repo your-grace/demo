@@ -44,6 +44,7 @@ public class ReflectDemo {
         Method[] methods = ReflectUtil.getMethods(ReflectDemo.class);
         for (Method m : methods) {
             System.out.println(m.getName());
+            break;
         }
         // 获取指定方法
         Method method = ReflectUtil.getMethod(ReflectDemo.class, "print");
