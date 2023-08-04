@@ -88,32 +88,3 @@ public class ProductorConsumer {
     }
 
 }
-
-//	  输出结果：
-//    生产者pool-1-thread-1 生产数据-232820990
-//    生产者pool-1-thread-1 生产数据1432164130
-//    生产者pool-1-thread-1 生产数据1057090222
-//    生产者pool-1-thread-1 生产数据1201395916
-//    生产者pool-1-thread-1 生产数据482766516
-//    生产者pool-1-thread-1  list以达到最大容量，进行wait
-//    消费者pool-1-thread-15  退出wait
-//    消费者pool-1-thread-15  消费数据：1237535349
-//    消费者pool-1-thread-15  消费数据：-1617438932
-//    消费者pool-1-thread-15  消费数据：-535396055
-//    消费者pool-1-thread-15  消费数据：-232820990
-//    消费者pool-1-thread-15  消费数据：1432164130
-//    消费者pool-1-thread-15  消费数据：1057090222
-//    消费者pool-1-thread-15  消费数据：1201395916
-//    消费者pool-1-thread-15  消费数据：482766516
-//    消费者pool-1-thread-15  list为空，进行wait
-//    生产者pool-1-thread-5  退出wait
-//    生产者pool-1-thread-5 生产数据1442969724
-//    生产者pool-1-thread-5 生产数据1177554422
-//    生产者pool-1-thread-5 生产数据-133137235
-//    生产者pool-1-thread-5 生产数据324882560
-//    生产者pool-1-thread-5 生产数据2065211573
-//    生产者pool-1-thread-5 生产数据253569900
-//    生产者pool-1-thread-5 生产数据571277922
-//    生产者pool-1-thread-5 生产数据1622323863
-//    生产者pool-1-thread-5  list以达到最大容量，进行wait
-//    消费者pool-1-thread-10  退出wait
