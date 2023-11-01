@@ -6,6 +6,7 @@ import java.util.concurrent.Future;
 
 public class SumbitExcuteStart {
     public static void main(String[] args) {
+
         /**
          * 1. submit方法：
          * submit方法用于向线程池提交一个任务，并返回一个表示任务执行结果的Future对象。它适用于需要获取任务执行结果的场景。
